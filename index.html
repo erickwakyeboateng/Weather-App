@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Weather Forecast</h1>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-9">
+                <div class="input-group">
+                    <input type="text" id="city-input" class="form-control" placeholder="Enter city name">
+                    <div class="input-group-append">
+                        <button id="search-btn" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather-info mt-5">
+            <div id="city-name" class="text-center"></div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-6 text-center">
+                    <div id="weather-icon"></div>
+                    <div id="weather-description"></div>
+                    <div id="temperature"></div>
+                    <div id="current-time"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-svg-core@5.15.1/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/free-solid-svg-icons@5.15.1/index.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
